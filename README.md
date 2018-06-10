@@ -23,5 +23,9 @@
 
 ##### C:\Program Files (x86)\Java\jdk1.8.0_161\bin>keytool -list -v -keystore "C:\Mahyar\projects\signed apk\realITProject.jks" -alias "key0" -storepass "123456" -keypass "123456"
 
+### For getting Key Hash (Facebook):
+
+#### keytool -exportcert -alias "key0" -keystore "C:\Mahyar\projects\signed apk\kauppakeskus.jks" | c:\OpenSSL\bin\openssl.exe sha1 -binary | c:\OpenSSL\bin\openssl.exe base64
+
 ##### Reference:
 ###### https://www.youtube.com/watch?v=KsHKCeh4pg4
